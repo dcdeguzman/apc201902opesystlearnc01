@@ -4,7 +4,7 @@ int main() {
    double radius, circumference, area;
    double pi = 3.14159265;             
  
-   printf("Enter the radius: ");  
+   printf("Enter the r: ");  
    scanf("%lf", &radius);       
  
    area = radius * radius * pi;
