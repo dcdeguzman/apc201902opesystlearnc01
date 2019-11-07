@@ -1,0 +1,13 @@
+.PHONY = all clean
+CC = gcc
+LINKERFLAG = -lm
+learnc1 := $(learnc1:%.c=%)
+all: ${learnc1}
+
+%: %.o
+	${CC} ${LINKERFLAG} $< -o.o: learnc1.c
+	${CC} -c learnc1.c
+
+clean:
+	@echo "Cleaning up..."
+	rm learnc1.o learnc1
